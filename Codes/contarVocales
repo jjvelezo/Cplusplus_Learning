@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+char letra;
+int n, n1, valores, a;
+char valor [255];
+int main (){
+    cout << "Ingrese cuantos valores desea usar:";
+    cin >> valores;
+    for (a=1; a<=valores; a++){
+        cout << "Ingrese el valor a usar\t";
+        cin >> n;
+        cout << "Letra a guardar:\t";
+        cin >> letra;
+        valor [n] = letra;
+    }
+    cout << "Que letra desea imprimir\t";
+    cin >> n1;
+    cout << valor [n1];
+}
